@@ -11,7 +11,6 @@
   inputs.src-httpbeast-v0_2_0.ref   = "refs/tags/v0.2.0";
   inputs.src-httpbeast-v0_2_0.owner = "dom96";
   inputs.src-httpbeast-v0_2_0.repo  = "httpbeast";
-  inputs.src-httpbeast-v0_2_0.dir   = "";
   inputs.src-httpbeast-v0_2_0.type  = "github";
   
   inputs."asynctools".owner = "nim-nix-pkgs";

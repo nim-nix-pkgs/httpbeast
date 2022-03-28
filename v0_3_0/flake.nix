@@ -11,8 +11,15 @@
   inputs.src-httpbeast-v0_3_0.ref   = "refs/tags/v0.3.0";
   inputs.src-httpbeast-v0_3_0.owner = "dom96";
   inputs.src-httpbeast-v0_3_0.repo  = "httpbeast";
-  inputs.src-httpbeast-v0_3_0.dir   = "";
   inputs.src-httpbeast-v0_3_0.type  = "github";
+  
+  inputs."github.com/iffy/asynctools".owner = "nim-nix-pkgs";
+  inputs."github.com/iffy/asynctools".ref   = "master";
+  inputs."github.com/iffy/asynctools".repo  = "github.com/iffy/asynctools";
+  inputs."github.com/iffy/asynctools".dir   = "";
+  inputs."github.com/iffy/asynctools".type  = "github";
+  inputs."github.com/iffy/asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/iffy/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
